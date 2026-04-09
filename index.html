@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybuc OS</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.tag {
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+.download-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 50px 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.2);
+}
+
+code {
+  display: block;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+
+footer {
+  padding: 20px;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="cybuc-logo.gif" alt="Cybuc Logo" class="logo">
+  <h1>Cybuc OS</h1>
+  <div class="tag">Canary Release</div>
+  <button class="download-btn" onclick="downloadISO()">Download ISO</button>
+</header>
+
+<div class="section">
+  <div class="card">
+    <h2>⚡ Fast. Experimental. Yours.</h2>
+    <p>Cybuc Canary is the bleeding-edge version of the OS. Expect new features, bugs, and raw power.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h2>📘 Know the Names</h2>
+    <p><strong>Canary:</strong> Early experimental builds. May contain bugs. Used for testing new features first.</p>
+    <p><strong>Standard Release:</strong> Stable version intended for everyday use. Balanced and reliable.</p>
+    <p><strong>LTS (Long-Term Support):</strong> Highly stable version with extended support and updates over time.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h2>🔒 Verify Your Download</h2>
+    <p>Checksum (MD5):</p>
+    <code>f6e4cbef550cc5fcb187e3cd4a0f4e87</code>
+  </div>
+</div>
+
+<div class="section">
+  <div class="card">
+    <h2>💻 Install Guide</h2>
+    <p>1. Download the ISO</p>
+    <p>2. Flash to USB (Rufus / Balena Etcher)</p>
+    <p>3. Boot from USB</p>
+    <p>4. Install Cybuc</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Cybuc OS</p>
+</footer>
+
+<script>
+function downloadISO() {
+  window.location.href = "#"; // replace with your ISO link
+}
+</script>
+
+</body>
+</html>
